@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useNavigate, useRoutes } from 'react-router-dom'
 
+import { useIframeWalletHandler } from '@/hooks/useIframeWalletHandler'
 import routes from '~react-pages'
 
 function Redirect({ to }: { to: string }) {
@@ -12,5 +13,6 @@ function Redirect({ to }: { to: string }) {
 }
 
 export default function App() {
+  useIframeWalletHandler()
   return useRoutes([...routes, { path: '*', element: <Redirect to="/" /> }])
 }
