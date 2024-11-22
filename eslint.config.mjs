@@ -12,6 +12,8 @@ export default defineConfig(
   },
   {
     rules: {
+      '@stylistic/operator-linebreak': 'off',
+      '@stylistic/comma-dangle': 'off',
       '@stylistic/brace-style': ['error', '1tbs', { allowSingleLine: true }],
       '@typescript-eslint/no-explicit-any': 'off',
       '@eslint-react/naming-convention/filename-extension': 'off',
@@ -35,5 +37,5 @@ export default defineConfig(
   },
   {
     ignores: ['**/*.d.ts', 'node_modules/', '**/dist', 'coverage/', '**/test/'],
-  },
+  }
 )

@@ -12,6 +12,7 @@
     "**/*.js"
   ],
   "extends": [
+    "plugin:prettier/recommended",
     "plugin:react-hooks/recommended",
     "plugin:import/warnings"
   ],
@@ -22,6 +23,7 @@
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
+    // suppress errors for missing 'import React' in files
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/explicit-module-boundary-types": 0,
     "semi": [

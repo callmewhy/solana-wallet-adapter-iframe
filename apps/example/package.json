@@ -4,7 +4,6 @@
   "main": "index.js",
   "scripts": {
     "build": "vite build",
-    "build:staging": "vite build",
     "dev": "vite",
     "preview": "vite preview"
   },

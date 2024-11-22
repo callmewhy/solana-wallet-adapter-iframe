@@ -1,31 +1,20 @@
 {
+  "extends": "@repo/typescript-config/base.json",
   "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "module": "ESNext",
     "lib": [
-      "ESNext",
-      "DOM",
-      "DOM.Iterable"
+      "ES2015",
+      "DOM"
     ],
-    "skipLibCheck": true,
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "noEmit": true,
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "types": [
+      "node"
+    ]
   },
+  "include": [
+    "src"
+  ],
   "exclude": [
     "node_modules"
-  ],
-  "include": [
-    "./**/*.ts"
   ]
 }
