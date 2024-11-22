@@ -5,6 +5,7 @@
       "ES2015",
       "DOM"
     ],
+    "target": "ESNext",
     "outDir": "./dist",
     "rootDir": "./src",
     "types": [
