@@ -1,5 +1,4 @@
 # solana-wallet-adapter-iframe
---------------------------
 
 Solana wallet adapter for iframe
 
